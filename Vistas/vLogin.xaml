@@ -3,6 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="OTacoRefuerzo.Vistas.vLogin"
              Title="vLogin">
+    <ContentPage.Resources>
+        <Style x:Key="estiloEntry" TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="Aqua"/>
+        </Style>
+    </ContentPage.Resources>
     <ScrollView>
     <VerticalStackLayout
         Padding="20"
@@ -17,6 +22,7 @@
         <Image Source="dotnet_bot.png"
                MaximumHeightRequest="100"/>
         <Entry x:Name="txtUsuario"
+               Style="{StaticResource estiloEntry}"
                Placeholder="Ingresa el usuario"/>
         <Entry x:Name="txtContrasena"
                IsPassword="True"
