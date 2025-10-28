@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OTacoRefuerzo.Vistas.vLogin"
+             Title="vLogin">
+    <ScrollView>
+    <VerticalStackLayout
+        Padding="20"
+        Spacing="20">
+        <Label 
+            Text="Ventana de Login"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"
+            TextColor="Blue"/>
+
+        <Image Source="dotnet_bot.png"
+               MaximumHeightRequest="100"/>
+        <Entry x:Name="txtUsuario"
+               Placeholder="Ingresa el usuario"/>
+        <Entry x:Name="txtContrasena"
+               IsPassword="True"
+           Placeholder="Ingresa la contrasena"/>
+            <Button x:Name="btnIniciar"
+                Text="Iniciar Sesion"
+                Clicked="btnIniciar_Clicked"/>
+
+
+
+        </VerticalStackLayout>
+   </ScrollView>
+</ContentPage>
